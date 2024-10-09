@@ -5,3 +5,5 @@ Adds sweep icons to Outlook emails with Sweep filters
 
 
 The extension's automaticlly updates its list of your Sweep rules when you visit the Sweep page in settings.  A confirmation is shown at the top of the settings window.
+
+I don't really know JS well sorry
