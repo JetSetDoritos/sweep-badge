@@ -22,7 +22,7 @@ function updateRules(){
         document.querySelector('div[aria-label="Sweep rules"]').querySelectorAll('div').forEach(function (item, index) {
         if (item.textContent.startsWith("For messages received from ")){
             //console.log(item.textContent.split(' ')[4].substring(0, str.length - 1));
-            sweep_addresses.push(item.textContent.split(' ')[4].slice(0,-1));
+            sweep_addresses.push(item.textContent.split(' ')[4].slice(0,-1).toLowerCase());
         }       
          
         });
@@ -75,8 +75,8 @@ function insert_all(){
 }
 
 function insert_icon(email_addr){
-    if (document.querySelector('span[title="' + email_addr + '"]') != null){
-        document.querySelectorAll('span[title="' + email_addr + '"]').forEach(function (item, index) {
+    if (document.querySelector('span[title="' + email_addr + '" i]') != null){
+        document.querySelectorAll('span[title="' + email_addr + '" i]').forEach(function (item, index) {
                 //only insert if thee is not existing sibling
                 if(item.nextSibling == null){
                     item.insertAdjacentHTML("afterend",'<i data-icon-name="BroomRegular" aria-hidden="true" class="row-sweep-icon ms-Button-icon icon-284"><span role="presentation" aria-hidden="true" style="padding-left: 3px;height: 100%; text-align: center; vertical-align: top; width: 100%;" class="FLwLv"><i class="fui-Icon-font Q0K3G ___1hzgx0x f14t3ns0 fne0op0 fkc42ay fmd4ok8 f1sxfq9t" style="forced-color-adjust: unset;" fill="currentColor" aria-hidden="true"></i></span></i>');

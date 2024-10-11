@@ -1,6 +1,6 @@
 {
     "name": "Sweep Badge",
-    "version": "0.6",
+    "version": "0.6.2",
     "manifest_version" : 3,
     "description": "Display Sweep badges in Outlook Web App.",
     "browser_specific_settings": {
