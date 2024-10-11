@@ -10,14 +10,14 @@
     },
     "content_scripts": [
 		{
-			"matches": [ "https://outlook.live.com/mail/*","https://outlook.office.com/mail/*" ],
+			"matches": [ "https://outlook.live.com/mail/*","https://outlook.office365.com/mail/*" ],
 			"js": [ "content.js" ],
             "run_at": "document_start"
 		}
 	],
     "host_permissions": [
 		"https://outlook.live.com/*",
-        "https://outlook.office.com/*"
+        "https://outlook.office365.com/*"
 	],
     "permissions": [
         "tabs",
